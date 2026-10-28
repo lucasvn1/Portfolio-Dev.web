@@ -1,0 +1,300 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #F2F4F7;
+    color: #12161D;
+    font-family: "IBM Plex Sans", Arial, sans-serif;
+    font-size: 17px;
+    line-height: 1.6;
+}
+
+h1,
+h2,
+h3 {
+    font-family: "Bricolage Grotesque", Arial, sans-serif;
+    line-height: 1.1;
+}
+
+h2 {
+    font-size: 40px;
+    margin-bottom: 28px;
+}
+
+a {
+    color: inherit;
+}
+
+/*sidebar*/
+.lateral {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 280px;
+    height: 100%;
+    padding: 50px 30px;
+}
+
+.lateral h1 {
+    font-size: 38px;
+}
+
+.profissao {
+    color: #5B6472;
+    margin-top: 8px;
+}
+
+.menu {
+    margin-top: 40px;
+}
+
+.menu a {
+    display: block;
+    text-decoration: none;
+    color: #5B6472;
+    padding: 6px 0 6px 2px;
+    border-left: 1px solid transparent;
+}
+
+.menu a:hover {
+    color: #12161D;
+    border-left: 3px solid #2F44D1;
+}
+
+.redes {
+    position: absolute;
+    bottom: 50px;
+    font-size: 15px;
+}
+
+/*aaaa*/
+main {
+    margin-left: 220px;
+    max-width: 100%;
+    padding: 50px 40px;
+}
+
+section {
+    margin-bottom: 90px;
+}
+
+.frase {
+    font-family: "Bricolage Grotesque", Arial, sans-serif;
+    font-size: 50px;
+    font-weight: 700;
+    line-height: 1.10;
+}
+
+.texto-sobre {
+    color: #5B6472;
+    max-width: 50%;
+    margin-top: 20px;
+}
+
+.botao {
+    display: inline-block;
+    text-decoration: none;
+    padding: 10px 25px;
+    margin-top: 26px;
+    margin-right: 12px;
+    border: 2px solid #12161D;
+    border-radius: 30px;
+}
+
+.botao-azul {
+    background-color: #4d5ece;
+    border: 2px solid #2F44D1;
+    color: #FFFFFF;
+}
+
+.botao:hover {
+    opacity: 0.8;
+}
+
+.projetos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.projeto {
+    display: block;
+    width: 50%;
+    background-color: #FFFFFF;
+    border-radius: 14px;
+    margin-bottom: 24px;
+    overflow: hidden;
+    text-decoration: none;
+    box-shadow: 0 2px 10px rgba(74, 74, 75, 0.8);
+    transition: 0.5s;
+}
+
+.projeto:hover {
+    border: 1px #D9DEE6;
+    transform: translateY(8px);
+    box-shadow: 0 5px 18px rgba(27, 27, 27, 0.5);
+}
+
+/*o primeiro projeto ocupa a linha inteira, com imagem ao lado do texto */
+.destaque {
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.imagem {
+    background-color: #D9DEE6;
+    color: #5B6472;
+    height: 300px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.info {
+    padding: 22px 24px 26px 24px;
+}
+
+.info h3 {
+    font-size: 24px;
+    margin-bottom: 8px;
+}
+
+.info p {
+    color: #5B6472;
+}
+
+.tags {
+    margin-top: 30px;
+}
+
+.tag {
+    display: inline-block;
+    font-size: 14px;
+    color: #5B6472;
+    border: 1px solid #D9DEE6;
+    border-radius: 20px;
+    padding: 2px 12px;
+    margin-right: 6px;
+}
+
+/* ghabilidades*/
+.habilidades {
+    display: flex;
+    justify-content: space-between;
+}
+
+.coluna {
+    width: 25%;
+}
+
+.coluna h3 {
+    font-size: 19px;
+    margin-bottom: 10px;
+}
+
+.coluna ul {
+    list-style: none;
+    color: #5B6472;
+}
+
+.coluna li {
+    padding: 10px 0;
+    border-bottom: 1.5px solid #dbd8d8;
+}
+
+/*parte da trajetoria*/
+
+.item {
+    border-left: 4px solid #606588;
+    padding-left: 22px;
+    margin-bottom: 32px;
+}
+
+.data {
+    color: #5B6472;
+    font-size: 15px;
+}
+
+.item h3 {
+    font-size: 22px;
+    margin: 2px 0 6px 0;
+}
+
+/*meu contato*/
+.contato {
+    background-color: #435bac;
+    color: #FFFFFF;
+    border-radius: 18px;
+    padding: 48px 40px;
+}
+
+.contato h2 {
+    margin-bottom: 12px;
+}
+
+.contato p {
+    margin-bottom: 16px;
+}
+
+.email {
+    font-family: "Bricolage Grotesque", Arial, sans-serif;
+    font-size: 28px;
+    font-weight: 700;
+}
+ 
+/*muda também os links linkedin e github*/
+footer {
+    color: #444141;
+    font-size: 15px;
+}
+
+/*responsividade denovo*/
+@media (max-width: 800px) {
+    .lateral {
+        position: static;
+        width: 100%;
+        height: auto;
+        padding: 30px 20px 0 20px;
+    }
+
+    .redes {
+        position: static;
+        margin-top: 20px;
+    }
+
+    main {
+        margin-left: 0;
+        padding: 30px 20px;
+    }
+
+    .frase {
+        font-size: 32px;
+    }
+
+    .projeto,
+    .coluna {
+        width: 100%;
+    }
+
+    .destaque {
+        display: block;
+    }
+
+    .destaque .imagem,
+    .destaque .info {
+        width: 100%;
+    }
+
+    .habilidades {
+        display: block;
+    }
+
+    .coluna {
+        margin-bottom: 24px;
+    }
+}
